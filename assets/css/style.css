@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # Profil Padukuhan Section
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Profil Padukuhan Section
+--------------------------------------------------------------*/
 .profil-padukuhan {
   padding: 60px 20px;
   background-color: #f9f9f9;
@@ -47,7 +50,9 @@
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
+  text-align: justify;  /* Menambahkan justify pada teks */
 }
+
 
 /*--------------------------------------------------------------
 # Jumlah Penduduk Section
