@@ -5,34 +5,36 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Menambahkan warna latar belakang ringan */
 }
 
 .profile-container {
   display: flex;
-  flex-direction: column; /* Menyesuaikan arah elemen ke kolom untuk tampilan mobile yang lebih baik */
-  align-items: center; /* Menyusun konten di tengah secara horizontal */
+  flex-direction: row; /* Ubah ke column untuk tampilan vertikal di perangkat kecil */
+  align-items: flex-start;
   padding: 20px;
   margin: 20px auto;
-  max-width: 800px; /* Mengatur lebar maksimum kontainer */
+  max-width: 1000px; /* Menyesuaikan lebar kontainer */
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Mengubah shadow untuk efek lebih halus */
 }
 
 .profile-image {
-  margin-bottom: 20px;
+  flex: 1;
+  margin-right: 20px;
 }
 
 .profile-image img {
-  width: 150px; /* Menyesuaikan ukuran gambar */
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 100%;
+  max-width: 180px; /* Menyesuaikan ukuran gambar profil */
+  height: auto;
+  border-radius: 50%; /* Mengatur gambar menjadi bulat */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
 }
 
 .profile-details {
-  text-align: center; /* Menyusun teks di tengah */
+  flex: 2;
 }
 
 .profile-details h1 {
@@ -54,7 +56,7 @@ body {
 }
 
 .profile-details a {
-  color: #007bff;
+  color: #007bff; /* Menyesuaikan warna link */
   text-decoration: none;
 }
 
@@ -65,7 +67,13 @@ body {
 /* Responsif */
 @media (max-width: 768px) {
   .profile-container {
-    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .profile-details h1 {
