@@ -9,6 +9,20 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+p {
+    width: 100vw; /* Mengatur lebar paragraf 100% dari viewport width */
+    height: 100vh; /* Mengatur tinggi paragraf 100% dari viewport height */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+    text-align: justify; /* Mengatur teks agar terjustifikasi */
+    box-sizing: border-box; /* Agar padding dan border dihitung dalam ukuran elemen */
+    display: flex; /* Menggunakan flexbox untuk center content */
+    align-items: center; /* Memusatkan konten secara vertikal */
+    justify-content: center; /* Memusatkan konten secara horizontal */
+}
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
