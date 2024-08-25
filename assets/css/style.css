@@ -526,6 +526,13 @@ section {
     width: 50%;
   }
 }
+#portofolio {
+  width: 100vw;   /* Lebar 100% dari viewport width */
+  height: 100vh;  /* Tinggi 100% dari viewport height */
+  position: absolute; /* Agar elemen tidak terpengaruh oleh flow layout */
+  top: 0;
+  left: 0;
+}
 
 /*--------------------------------------------------------------
 # About
